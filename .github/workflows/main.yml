@@ -1,10 +1,23 @@
-'on':
+on:
   push:
     branches:
       - master
+
+
+
+
+
+
+
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-    - name: printing
-      run: pwd
+
+    steps: 
+      - name: 'testing action'
+        run: pwd
+        
+      - name: 'testing printing'
+        run: echo mohamed
