@@ -1,6 +1,6 @@
 on:
   push:
-    branches: 
+    branches:
       - master
 
 
@@ -8,6 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps: 
-    - name: 'printing contents'
-    - run: pwd
+  steps: 
+    - name: 'printing'
+      run: pwd
