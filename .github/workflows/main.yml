@@ -20,8 +20,3 @@ jobs:
         
       - name: "login to dockerhub"
         run: docker login --username ${{secrets.DOCKER_USERNAME}} --password {{secrets.DOCKER_TOKEN}}   
-
-      - name: "building image"
-        run: docker build -t ${{secrets.DOCKER_USERNAME}}/task1img .
-      - name: "pushing image"
-        run: docker push ${{secrets.DOCKER_USERNAME}}/task1img
